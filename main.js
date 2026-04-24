@@ -32,7 +32,7 @@ function getdata(time, day) {
     </tr>`;
 }
 
-axios.get("http://api.aladhan.com/v1/timingsByCity?country=JO&city=Amman")
+axios.get("https://api.aladhan.com/v1/timingsByCity?country=JO&city=Amman")
     .then((result) => {
         const time = result.data.data.timings;
         const day = result.data.data.date.hijri.weekday.ar;
@@ -47,7 +47,7 @@ select.addEventListener("change", function () {
 
     if (option === "Amman") {
         conitry.innerHTML = 'عمان'
-        axios.get("http://api.aladhan.com/v1/timingsByCity?country=JO&city=Amman")
+        axios.get("https://api.aladhan.com/v1/timingsByCity?country=JO&city=Amman")
             .then((result) => {
                 const time = result.data.data.timings;
                 const day = result.data.data.date.hijri.weekday.ar;
@@ -57,7 +57,7 @@ select.addEventListener("change", function () {
             });
     } else if (option === "Jerash") {
         conitry.innerHTML = 'جرش'
-        axios.get("http://api.aladhan.com/v1/timingsByCity?country=JO&city=Jerash")
+        axios.get("https://api.aladhan.com/v1/timingsByCity?country=JO&city=Jerash")
             .then((result) => {
                 const time = result.data.data.timings;
                 const day = result.data.data.date.hijri.weekday.ar;
@@ -67,7 +67,7 @@ select.addEventListener("change", function () {
             });
     } else if (option === "Zarqa") {
         conitry.innerHTML = 'الزرقاء'
-        axios.get("http://api.aladhan.com/v1/timingsByCity?country=JO&city=Zarqa")
+        axios.get("https://api.aladhan.com/v1/timingsByCity?country=JO&city=Zarqa")
             .then((result) => {
                 const time = result.data.data.timings;
                 const day = result.data.data.date.hijri.weekday.ar;
@@ -77,7 +77,7 @@ select.addEventListener("change", function () {
             });
     } else if (option === "Irbid") {
         conitry.innerHTML = 'إربد'
-        axios.get("http://api.aladhan.com/v1/timingsByCity?country=JO&city=Irbid")
+        axios.get("https://api.aladhan.com/v1/timingsByCity?country=JO&city=Irbid")
             .then((result) => {
                 const time = result.data.data.timings;
                 const day = result.data.data.date.hijri.weekday.ar;
@@ -87,7 +87,7 @@ select.addEventListener("change", function () {
             });
     } else if (option === "Aqaba") {
         conitry.innerHTML = 'العقبة'
-        axios.get("http://api.aladhan.com/v1/timingsByCity?country=JO&city=Aqaba")
+        axios.get("https://api.aladhan.com/v1/timingsByCity?country=JO&city=Aqaba")
             .then((result) => {
                 const time = result.data.data.timings;
                 const day = result.data.data.date.hijri.weekday.ar;
@@ -97,7 +97,7 @@ select.addEventListener("change", function () {
             });
     } else if (option === "Madaba") {
         conitry.innerHTML = 'مادبا'
-        axios.get("http://api.aladhan.com/v1/timingsByCity?country=JO&city=Madaba")
+        axios.get("https://api.aladhan.com/v1/timingsByCity?country=JO&city=Madaba")
             .then((result) => {
                 const time = result.data.data.timings;
                 const day = result.data.data.date.hijri.weekday.ar;
@@ -107,7 +107,7 @@ select.addEventListener("change", function () {
             });
     } else if (option === "Ma'an") {
         conitry.innerHTML = 'معان'
-        axios.get("http://api.aladhan.com/v1/timingsByCity?country=JO&city=Ma'an")
+        axios.get("https://api.aladhan.com/v1/timingsByCity?country=JO&city=Ma'an")
             .then((result) => {
                 const time = result.data.data.timings;
                 const day = result.data.data.date.hijri.weekday.ar;
@@ -117,7 +117,7 @@ select.addEventListener("change", function () {
             });
     } else if (option === "al-Karak") {
         conitry.innerHTML = 'الكرك'
-        axios.get("http://api.aladhan.com/v1/timingsByCity?country=JO&city=al-Karak")
+        axios.get("https://api.aladhan.com/v1/timingsByCity?country=JO&city=al-Karak")
             .then((result) => {
                 const time = result.data.data.timings;
                 const day = result.data.data.date.hijri.weekday.ar;
@@ -127,7 +127,7 @@ select.addEventListener("change", function () {
             });
     } else if (option === "ar-Rusaifa") {
         conitry.innerHTML = 'الرصيفة'
-        axios.get("http://api.aladhan.com/v1/timingsByCity?country=JO&city=ar-Rusaifa")
+        axios.get("https://api.aladhan.com/v1/timingsByCity?country=JO&city=ar-Rusaifa")
             .then((result) => {
                 const time = result.data.data.timings;
                 const day = result.data.data.date.hijri.weekday.ar;
@@ -137,7 +137,7 @@ select.addEventListener("change", function () {
             });
     } else if (option === "as-Salt") {
         conitry.innerHTML = 'السلط'
-        axios.get("http://api.aladhan.com/v1/timingsByCity?country=JO&city=as-Salt")
+        axios.get("https://api.aladhan.com/v1/timingsByCity?country=JO&city=as-Salt")
             .then((result) => {
                 const time = result.data.data.timings;
                 const day = result.data.data.date.hijri.weekday.ar;
